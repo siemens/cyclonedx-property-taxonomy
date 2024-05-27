@@ -1,4 +1,4 @@
-# Siemens CycloneDX Property Taxonomy, v1.1.0
+# Siemens CycloneDX Property Taxonomy, v1.2.0
 
 This is the official Siemens property taxonomy for CycloneDX.
 
@@ -24,6 +24,12 @@ their [official documentation](https://github.com/CycloneDX/cyclonedx-property-t
         <td><b>siemens:filename</b></td>
         <td>The simple file name of the component, without path. For example, the simple name of a JAR file.</td>
         <td><code>components[]</code></td>
+    </tr>
+    <tr style="vertical-align: top;">
+        <td><b>siemens:internal</b></td>
+        <td>A flag indicating whether the component is an internal ("in-house") component (<code>true</code>) or not
+            (<code>false</code>).</td>
+        <td><code>components[]</code> or <code>metadata/component</code></td>
     </tr>
     <tr style="vertical-align: top;">
         <td><b>siemens:legalRemark</b></td>
