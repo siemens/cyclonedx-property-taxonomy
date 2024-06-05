@@ -1,4 +1,4 @@
-# Siemens CycloneDX Property Taxonomy, v1.2.0
+# Siemens CycloneDX Property Taxonomy, v1.3.0
 
 This is the official Siemens property taxonomy for CycloneDX.
 
@@ -48,6 +48,15 @@ their [official documentation](https://github.com/CycloneDX/cyclonedx-property-t
         <td>A Siemens-internal declaration which indicates the use case for this SBOM. Depending on the profile,
             Siemens-internal validation tooling will expect different fields to be present or not present in the
             SBOM.</td>
+        <td><code>metadata</code></td>
+    </tr>
+    <tr style="vertical-align: top;">
+        <td><b>siemens:sbomNature</b></td>
+        <td>Used to indicate the nature of the entire SBOM document. Possible values are:
+            <ul><li><code>binary</code> – The SBOM contains binary components.</li>
+                <li><code>source</code> – The SBOM contains source components.</li>
+            </ul>
+            A binary component may have source information attached, and vice versa.</td>
         <td><code>metadata</code></td>
     </tr>
     <tr style="vertical-align: top;">
