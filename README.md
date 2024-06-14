@@ -56,7 +56,9 @@ their [official documentation](https://github.com/CycloneDX/cyclonedx-property-t
             <ul><li><code>binary</code> – The SBOM contains binary components.</li>
                 <li><code>source</code> – The SBOM contains source components.</li>
             </ul>
-            A binary component may have source information attached, and vice versa.</td>
+            This property is mostly relevant for package ecosystems that have this distinction, like
+            <a href="https://wiki.debian.org/Packaging/BinaryPackage">Debian</a> or
+            <a href="https://rpm-packaging-guide.github.io/#building-rpms">RPM</a>.</td>
         <td><code>metadata</code></td>
     </tr>
     <tr style="vertical-align: top;">
